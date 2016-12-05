@@ -54,11 +54,11 @@ public class FitnessResource {
      *
      */
     @GET
-    @Path("/sharedworkouts/{id}")
+    @Path("/sharedworkouts")
     @Produces("application/json")
-    public String getSharedWorkouts(@PathParam("id") int id) {
+    public String getSharedWorkouts() {
         try {
-            return new Gson().toJson(retrieveSharedWorkouts(id));
+            return new Gson().toJson(retrieveSharedWorkouts());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -108,26 +108,32 @@ public class FitnessResource {
      * Utility method that does the database query, potentially throwing an SQLException,
      * returning list of workout objects (or null).
      */
-    private Workout retrieveSharedWorkouts(int id) throws Exception {
+    private List<Workout> retrieveSharedWorkouts() throws Exception {
         Connection connection = null;
         Statement statement = null;
         ResultSet rs = null;
         List<Exercise> exercises = new ArrayList<>();
-        Workout workout = null;
+        List<Workout> workout_list = new ArrayList<>();
+        List<String> workout_names = new ArrayList<>();
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(DB_URI, DB_LOGIN_ID, DB_PASSWORD);
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-            rs = statement.executeQuery("SELECT * FROM CalvinUser, Workout, Exercise, SharedWorkout WHERE SharedWorkout.ViewerID=" + id + " AND SharedWorkout.WorkoutID = Workout.ID AND Exercise.WorkoutID = Workout.ID AND CalvinUser.ID=" + id);
-            if (rs.next()) {
-                workout = new Workout(rs.getString(5));
+            rs = statement.executeQuery("SELECT * FROM CalvinUser, Workout, Exercise WHERE CalvinUser.ID = Workout.UserID AND Exercise.WorkoutID = Workout.ID");
+            while (rs.next()) {
+                String temp_name = rs.getString(5);
+                if (!workout_names.contains(temp_name)) {
+                    workout_names.add(temp_name);
+                    workout_list.add(new Workout(temp_name));
+                }
             }
             rs.beforeFirst();
             while (rs.next()) {
-                exercises.add(new Exercise(rs.getString(8), rs.getInt(10), rs.getInt(9), rs.getInt(11)));
-            }
-            for (Exercise exercise: exercises) {
-                workout.addExercise(exercise);
+                for (Workout workout: workout_list) {
+                    if (workout.getWorkout_name().equals(rs.getString(5))) {
+                        workout.addExercise(new Exercise(rs.getString(8), rs.getInt(10), rs.getInt(9), rs.getInt(11)));
+                    }
+                }
             }
         } catch (SQLException e) {
             throw (e);
@@ -136,7 +142,7 @@ public class FitnessResource {
             statement.close();
             connection.close();
         }
-        return workout;
+        return workout_list;
     }
 
     /** Main *****************************************************/

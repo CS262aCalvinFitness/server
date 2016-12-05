@@ -1,5 +1,4 @@
 ﻿-- Drop previous versions of the tables if they they exist, in reverse order of foreign keys.
-DROP TABLE IF EXISTS SharedWorkout;
 DROP TABLE IF EXISTS Exercise;
 DROP TABLE IF EXISTS Workout;
 DROP TABLE IF EXISTS CalvinUser;
@@ -24,18 +23,11 @@ CREATE TABLE Exercise (
 	Reps integer,
 	Weight integer
 	);
-	
-CREATE TABLE SharedWorkout(
-	ViewerID integer REFERENCES CalvinUser(ID),
-	WorkoutID integer REFERENCES Workout(ID) 
-	);
-
 
 -- Grant access to data 
 GRANT SELECT ON CalvinUser TO PUBLIC;
 GRANT SELECT ON Workout TO PUBLIC;
 GRANT SELECT ON Exercise TO PUBLIC;
-GRANT SELECT ON SharedWorkout TO PUBLIC;
 
 -- Sample records
 INSERT INTO CalvinUser VALUES (1, 'mdk22');
@@ -53,7 +45,3 @@ INSERT INTO Exercise VALUES (52, 11, 'Bench Press', 5, 5, 150);
 INSERT INTO Exercise VALUES (53, 12, 'Back Squats', 4, 5, 100);
 INSERT INTO Exercise VALUES (54, 12, 'Shoulder Press', 6, 10, 60);
 INSERT INTO Exercise VALUES (55, 13, 'Bench Press', 5, 5, 80);
-
-INSERT INTO SharedWorkout VALUES (1, 13);
-INSERT INTO SharedWorkout VALUES (2, 10);
-INSERT INTO SharedWorkout VALUES (3, 12);
