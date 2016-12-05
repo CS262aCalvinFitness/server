@@ -15,18 +15,27 @@ public class Workout {
     private String workout_name;
     private Boolean completed;
     private Date workout_date;
+    private Integer userID, id;
 
     Workout() { }
 
-    Workout(String Name) {
+    Workout(String Name, Integer userID, Integer id) {
         exercise_list = new ArrayList<>();
         this.workout_name = Name;
         completed = false;
         workout_date = Calendar.getInstance().getTime();
+        this.userID = userID;
+        this.id = id;
     }
 
     public String getWorkout_name() { return workout_name; }
 
     public void addExercise(Exercise e) { exercise_list.add(e); }
+
+    public Integer getUserID() { return userID; }
+
+    public Integer getID() { return id; }
+
+    public void setID(Integer new_id) { this.id = new_id; }
 
 }
