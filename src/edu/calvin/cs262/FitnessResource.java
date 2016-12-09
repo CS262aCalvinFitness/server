@@ -61,6 +61,32 @@ public class FitnessResource {
     }
 
     /**
+     * POST method for creating an instance of a User with a new, unique ID
+     * number. We do this because POST is not idempotent, meaning that running
+     * the same POST several times creates multiple objects with unique IDs but
+     * otherwise having the same field values.
+     *
+     * The method creates a new, unique ID by querying the workout table for the
+     * largest ID and adding 1 to that. Using a DB sequence would be a better solution.
+     *
+     * @param userLine a JSON representation of the player (ID ignored)
+     * @return a JSON representation of the new user
+     */
+    @POST
+    @Path("/users")
+    @Consumes("application/json")
+    @Produces("application/json")
+    public String postNewUser(String userLine) {
+        try {
+            User user = new Gson().fromJson(userLine, User.class);
+            return new Gson().toJson(addNewUser(user));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
      * POST method for creating an instance of Shared Workout with a new, unique ID
      * number. We do this because POST is not idempotent, meaning that running
      * the same POST several times creates multiple objects with unique IDs but
@@ -166,6 +192,35 @@ public class FitnessResource {
             connection.close();
         }
         return workout_list;
+    }
+
+    /*
+     * Utility method that adds the given User using a new, unique ID, potentially throwing an SQLException,
+     *      also returning the new User
+     */
+    private User addNewUser(User user) throws Exception {
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet rs = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URI, DB_LOGIN_ID, DB_PASSWORD);
+            statement = connection.createStatement();
+            rs = statement.executeQuery("SELECT MAX(ID) FROM CalvinUser");
+            if (rs.next()) {
+                user.setId(rs.getInt(1) + 1);
+            } else {
+                throw new RuntimeException("failed to find unique ID...");
+            }
+            statement.executeUpdate("INSERT INTO CalvinUser VALUES (" + user.getID() + ", '" + user.getUsername() + "')");
+        } catch (SQLException e) {
+            throw (e);
+        } finally {
+            rs.close();
+            statement.close();
+            connection.close();
+        }
+        return user;
     }
 
     /*

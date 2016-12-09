@@ -5,25 +5,25 @@ package edu.calvin.cs262;
  */
 public class Exercise {
 
-    private String Name;
-    private int Sets, Reps, Weight;
+    private String name;
+    private int sets, reps, weights;
 
     Exercise() { }
 
     Exercise(String Name, int Reps, int Sets, int Weight) {
-        this.Name = Name;
-        this.Sets = Sets;
-        this.Reps = Reps;
-        this.Weight = Weight;
+        this.name = Name;
+        this.sets = Sets;
+        this.reps = Reps;
+        this.weights = Weight;
     }
 
-    public String getName() { return Name; }
+    public String getName() { return name; }
 
-    public int getSets() { return Sets; }
+    public int getSets() { return sets; }
 
-    public int getReps() { return Reps; }
+    public int getReps() { return reps; }
 
-    public int getWeight() { return Weight; }
+    public int getWeight() { return weights; }
 
 
 }
