@@ -95,8 +95,8 @@ public class FitnessResource {
      * The method creates a new, unique ID by querying the workout table for the
      * largest ID and adding 1 to that. Using a DB sequence would be a better solution.
      *
-     * @param workoutLine a JSON representation of the player (ID ignored)
-     * @return a JSON representation of the new player
+     * @param workoutLine a JSON representation of the workout (ID ignored)
+     * @return a JSON representation of the new workout
      */
     @POST
     @Path("/sharedworkouts")
@@ -106,6 +106,32 @@ public class FitnessResource {
         try {
             Workout workout = new Gson().fromJson(workoutLine, Workout.class);
             return new Gson().toJson(addNewWorkout(workout));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * POST method for creating an instance of Shared Workout with a new, unique ID
+     * number. We do this because POST is not idempotent, meaning that running
+     * the same POST several times creates multiple objects with unique IDs but
+     * otherwise having the same field values.
+     *
+     * The method creates a new, unique ID by querying the workout table for the
+     * largest ID and adding 1 to that. Using a DB sequence would be a better solution.
+     *
+     * @param exerciseLine a JSON representation of the workout (ID ignored)
+     * @return a JSON representation of the new workout
+     */
+    @POST
+    @Path("/sharedworkouts/exercise")
+    @Consumes("application/json")
+    @Produces("application/json")
+    public String postSharedWorkoutExercise(String exerciseLine) {
+        try {
+            Exercise exercise = new Gson().fromJson(exerciseLine, Exercise.class);
+            return new Gson().toJson(addNewExercise(exercise));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -124,7 +150,7 @@ public class FitnessResource {
     * Utility method that does the database query, potentially throwing an SQLException,
     * returning a list of name-value map objects (potentially empty).
     */
-    private List<String> retrieveUsers() throws Exception {
+    private List<User> retrieveUsers() throws Exception {
         Connection connection = null;
         Statement statement = null;
         ResultSet rs = null;
@@ -138,9 +164,6 @@ public class FitnessResource {
             while (rs.next()) {
                 users.add(new User(rs.getInt(1), rs.getString(2)));
             }
-            for (User object: users) {
-                usernames.add(object.getUsername());
-            }
         } catch (SQLException e) {
             throw (e);
         } finally {
@@ -148,7 +171,7 @@ public class FitnessResource {
             statement.close();
             connection.close();
         }
-        return usernames;
+        return users;
     }
 
     /*
@@ -180,7 +203,7 @@ public class FitnessResource {
             while (rs.next()) {
                 for (Workout workout: workout_list) {
                     if (workout.getWorkout_name().equals(rs.getString(5))) {
-                        workout.addExercise(new Exercise(rs.getString(8), rs.getInt(10), rs.getInt(9), rs.getInt(11)));
+                        workout.addExercise(new Exercise(rs.getString(8), rs.getInt(10), rs.getInt(9), rs.getInt(11), rs.getInt(6), workout.getID()));
                     }
                 }
             }
@@ -237,7 +260,7 @@ public class FitnessResource {
             statement = connection.createStatement();
             rs = statement.executeQuery("SELECT MAX(ID) FROM Workout");
             if (rs.next()) {
-                    workout.setID(rs.getInt(1));
+                    workout.setID(rs.getInt(1) + 1);
             } else {
                 throw new RuntimeException("Failed to find unique ID...");
             }
@@ -250,6 +273,35 @@ public class FitnessResource {
             connection.close();
         }
         return workout;
+    }
+
+    /*
+    * Utility method that adds the given shared workout using a new,unique ID, potentially throwing an SQLException,
+    * returning the new shared workout
+    */
+    private Exercise addNewExercise(Exercise exercise) throws Exception {
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet rs = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URI, DB_LOGIN_ID, DB_PASSWORD);
+            statement = connection.createStatement();
+            rs = statement.executeQuery("SELECT MAX(ID) FROM Exercise");
+            if (rs.next()) {
+                exercise.setID(rs.getInt(1) + 1);
+            } else {
+                throw new RuntimeException("Failed to find unique ID...");
+            }
+            statement.executeUpdate("INSERT INTO Exercise VALUES (" + exercise.getID() + ", " + exercise.getWorkoutID() + ", '" + exercise.getName() + "', " + exercise.getSets() + ", " + exercise.getReps() + ", " + exercise.getWeight() + ")");
+        } catch (SQLException e) {
+            throw (e);
+        } finally {
+            rs.close();
+            statement.close();
+            connection.close();
+        }
+        return exercise;
     }
 
     /** Main *****************************************************/

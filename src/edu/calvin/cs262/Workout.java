@@ -28,6 +28,15 @@ public class Workout {
         this.id = id;
     }
 
+    Workout(String Name, Integer userID) {
+        exercise_list = new ArrayList<>();
+        this.workout_name = Name;
+        completed = false;
+        workout_date = Calendar.getInstance().getTime();
+        this.userID = userID;
+        id = -1;
+    }
+
     public String getWorkout_name() { return workout_name; }
 
     public void addExercise(Exercise e) { exercise_list.add(e); }
@@ -37,5 +46,7 @@ public class Workout {
     public Integer getID() { return id; }
 
     public void setID(Integer new_id) { this.id = new_id; }
+
+    public List<Exercise> getExercise_list() { return exercise_list; }
 
 }

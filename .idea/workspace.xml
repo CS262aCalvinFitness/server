@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec4d7d4-ec29-4bf7-9634-57c86af2bf8a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/Exercise.class" afterPath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/Exercise.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/FitnessResource.class" afterPath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/FitnessResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/Workout.class" afterPath="$PROJECT_DIR$/out/production/Lab09/edu/calvin/cs262/Workout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/elc3.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/elc3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java" afterPath="$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java" afterPath="$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/calvin/cs262/User.java" afterPath="$PROJECT_DIR$/src/edu/calvin/cs262/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java" afterPath="$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java" />
     </list>
     <ignored path="Lab09.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,31 +31,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FitnessResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FitnessResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+            <state relative-caret-position="1802">
+              <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-                <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-                <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-                <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-                <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-                <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-                <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-                <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+                <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+                <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+                <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+                <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+                <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+                <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+                <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+                <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+                <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -60,8 +70,8 @@
       <file leaf-file-name="Workout.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="748">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +82,8 @@
       <file leaf-file-name="Exercise.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="289">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -101,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/edu/calvin/cs262/MonopolyResource.java" />
         <option value="$PROJECT_DIR$/lib/gson-2.6.2.jar!/com/google/gson/Gson.class" />
-        <option value="$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java" />
         <option value="$PROJECT_DIR$/src/edu/calvin/cs262/User.java" />
+        <option value="$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java" />
         <option value="$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java" />
         <option value="$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java" />
       </list>
@@ -146,6 +156,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,7 +167,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -660,19 +670,20 @@
       <workItem from="1480178457714" duration="3758000" />
       <workItem from="1480973764443" duration="1140000" />
       <workItem from="1481309549965" duration="4707000" />
+      <workItem from="1481572467090" duration="12398000" />
+      <workItem from="1481589915591" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26368000" />
+    <option name="totallyTimeSpent" value="38796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -688,12 +699,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33289817" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -727,14 +739,120 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
         </state>
       </provider>
@@ -745,14 +863,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
         </state>
       </provider>
@@ -789,14 +913,20 @@
           <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
         </state>
       </provider>
@@ -833,14 +963,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
         </state>
       </provider>
@@ -877,14 +1013,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
         </state>
       </provider>
@@ -912,8 +1054,8 @@
     <entry file="file://$USER_HOME$/Desktop/FitnessResource.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Workout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="748">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -922,35 +1064,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/Exercise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="289">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/FitnessResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+        <state relative-caret-position="1802">
+          <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481311115545" expanded="true" signature="4594:4618" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="5854:5970" ph="SELECT * FRO... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7534:7564" ph="SELECT MAX(I... CalvinUser" />
-            <marker date="1481311115545" expanded="true" signature="7790:7821" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7844" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="7790:7872" ph="INSERT INTO CalvinUser... " />
-            <marker date="1481311115545" expanded="true" signature="8674:8701" ph="SELECT MAX(I... Workout" />
-            <marker date="1481311115545" expanded="true" signature="8930:9048" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="5663:5687" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="6813:6929" ph="SELECT * FRO... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8524:8554" ph="SELECT MAX(I... CalvinUser" />
+            <marker date="1481589063547" expanded="true" signature="8780:8862" ph="INSERT INTO CalvinUser... " />
+            <marker date="1481589063547" expanded="true" signature="9664:9691" ph="SELECT MAX(I... Workout" />
+            <marker date="1481589063547" expanded="true" signature="9924:10042" ph="INSERT INTO Workout... " />
+            <marker date="1481589063547" expanded="true" signature="10848:10876" ph="SELECT MAX(I... Exercise" />
+            <marker date="1481589063547" expanded="true" signature="11106:11222" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11223" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11224" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11252" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11279" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11280" ph="INSERT INTO Exercise... " />
+            <marker date="1481589063547" expanded="true" signature="11106:11309" ph="INSERT INTO Exercise... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/calvin/cs262/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
